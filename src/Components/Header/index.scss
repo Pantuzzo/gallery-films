@@ -1,0 +1,21 @@
+.main-header {
+  height: 68px;
+  background-color: black;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    img {
+      height: 50px;
+      object-fit: cover;
+    }
+    label {
+      color: white;
+    }
+  }
+}
