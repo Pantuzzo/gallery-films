@@ -21,7 +21,12 @@ function BannerCarousel() {
     },
   };
 
-  const bannerImages = ["./banner-1.jpg", "./banner-2.jpg", "./banner-3.jpg"];
+  const bannerImages = [
+    "./banner-1.jpg",
+    "./banner-2.jpg",
+    "./banner-3.jpg",
+    "./banner-4.jpg",
+  ];
 
   return (
     <Carousel
