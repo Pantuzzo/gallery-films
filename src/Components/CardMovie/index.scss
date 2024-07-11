@@ -1,0 +1,13 @@
+.containerCard {
+  height: auto; // Alterado de 165px para auto
+  width: auto; // Alterado de 293px para auto
+  img {
+    width: 100%; // Mantido
+    height: 100%; // Mantido
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; // Transição suave
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
