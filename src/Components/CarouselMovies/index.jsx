@@ -63,11 +63,11 @@ function BannerCarousel(genre) {
         autoPlaySpeed={3000}
         centerMode={false}
         className=""
-        containerClass="container"
+        containerClass="container-with-dots"
         dotListClass=""
         draggable
         focusOnSelect={false}
-        infinite={false}
+        infinite
         itemClass=""
         keyBoardControl
         minimumTouchDrag={80}
@@ -82,7 +82,7 @@ function BannerCarousel(genre) {
         shouldResetAutoplay
         showDots={false}
         sliderClass=""
-        slidesToSlide={1}
+        slidesToSlide={6}
         swipeable
       >
         {movies.map((movie) => (
