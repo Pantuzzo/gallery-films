@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import bannerImages from "../../constants/banners";
 function BannerCarousel() {
   const responsive = {
     superLargeDesktop: {
@@ -20,13 +21,6 @@ function BannerCarousel() {
       items: 1,
     },
   };
-
-  const bannerImages = [
-    "./banner-1.jpg",
-    "./banner-2.jpg",
-    "./banner-3.jpg",
-    "./banner-4.jpg",
-  ];
 
   return (
     <Carousel
