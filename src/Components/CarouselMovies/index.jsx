@@ -35,12 +35,11 @@ const responsive = {
 
 function BannerCarousel(genre) {
   const [movies, setMovies] = useState([]);
-
   useEffect(() => {
     const fetchMovies = async () => {
       try {
         const data = await fetchMoviesAPI({
-          page: 1,
+          page: genre.page,
           sort_by: "popularity.desc",
           with_genres: genre.genre,
         });
@@ -51,7 +50,7 @@ function BannerCarousel(genre) {
     };
 
     fetchMovies();
-  }, [genre.genre]);
+  }, [genre]);
 
   const foundGenre = genres.find((item) => item.id === parseInt(genre.genre));
 

@@ -2,7 +2,6 @@ import axios from "axios";
 
 async function fetchMoviesAPI(params) {
   const { page, sort_by, with_genres } = params;
-
   try {
     const response = await axios.get(
       "https://api.themoviedb.org/3/discover/movie",
